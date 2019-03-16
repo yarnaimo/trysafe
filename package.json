@@ -1,5 +1,7 @@
 {
+  "name": "trysafe",
   "version": "0.0.0",
+  "repository": "github:yarnaimo/trysafe",
   "license": "MIT",
   "author": "yamaimo <yarnaimo@gmail.com>",
   "main": "dist/index.js",
@@ -18,13 +20,19 @@
     }
   },
   "lint-staged": {
-    "./package.json": [
-      "sort-package-json",
-      "git add"
-    ],
     "*.{js,jsx,ts,tsx,css,scss,vue,gql,md}": [
       "prettier --write --ignore-path .gitignore",
       "git add"
+    ],
+    "./package.json": [
+      "sort-package-json",
+      "git add"
     ]
+  },
+  "dependencies": {
+    "@yarnaimo/rain": "^0.2.7"
+  },
+  "devDependencies": {
+    "@yarnaimo/tss": "^0.0.2"
   }
 }
