@@ -12,11 +12,10 @@ yarn add trysafe
 
 `Try` and `TryAsync` returns an `Either` type defined in fp-ts.
 
-### Sync
-
 ```ts
-import { Try } from 'trysafe'
+import { Try, TryAsync } from 'trysafe'
 
+// sync
 const result = Try(() => {
     if (condition) {
         throw new Error('failed')
@@ -27,25 +26,7 @@ const result = Try(() => {
     return 'succeeded'
 })
 
-// typeof result: Either<Error, string>
-
-if (result.isLeft()) {
-    // typeof result.value: Error
-
-    console.error(result.value.message) // -> 'failed'
-    return
-}
-
-// typeof result.value: string
-
-console.log(result.value) // -> 'succeeded'
-```
-
-### Async
-
-```ts
-import { TryAsync } from 'trysafe'
-
+// async
 const result = await TryAsync(async () => {
     if (condition) {
         throw new Error('failed')
@@ -56,16 +37,16 @@ const result = await TryAsync(async () => {
     return 'succeeded'
 })
 
-// typeof result: Either<Error, string>
+// result: Either<Error, string>
 
 if (result.isLeft()) {
-    // typeof result.value: Error
+    // result.value: Error
 
     console.error(result.value.message) // -> 'failed'
     return
 }
 
-// typeof result.value: string
+// result.value: string
 
 console.log(result.value) // -> 'succeeded'
 ```
