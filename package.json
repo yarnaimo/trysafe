@@ -1,6 +1,15 @@
 {
   "name": "trysafe",
   "version": "0.0.0",
+  "keywords": [
+    "async",
+    "await",
+    "catch",
+    "error",
+    "error-handling",
+    "fp-ts",
+    "try"
+  ],
   "repository": "github:yarnaimo/trysafe",
   "license": "MIT",
   "author": "yamaimo <yarnaimo@gmail.com>",
