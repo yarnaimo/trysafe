@@ -1,12 +1,12 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es2018",
+    "target": "es2015",
     "module": "commonjs",
     "lib": [
       "dom",
       "dom.iterable",
-      "es2018"
+      "es2015"
     ],
     "declaration": true,
     "sourceMap": true,

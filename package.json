@@ -30,9 +30,9 @@
     ]
   },
   "dependencies": {
-    "@yarnaimo/rain": "^0.2.7"
+    "fp-ts": "^1.14.4"
   },
   "devDependencies": {
-    "@yarnaimo/tss": "^0.0.2"
+    "@yarnaimo/tss": "latest"
   }
 }
