@@ -1,4 +1,4 @@
-# TrySafe
+# ⛵ TrySafe
 
 > Safe and simple error handling for TypeScript, inspired by Golang and Scala
 
