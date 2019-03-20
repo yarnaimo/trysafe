@@ -1,15 +1,4 @@
-import { asError, Try, TryAsync } from '..'
-
-describe('asError', () => {
-    test('Error', () => {
-        const error = new Error('failed')
-        expect(asError(error)).toEqual(error)
-    })
-
-    test('string', () => {
-        expect(asError('failed').message).toEqual('failed')
-    })
-})
+import { Try, TryAsync } from '..'
 
 describe('Try', () => {
     test('return right', done => {
